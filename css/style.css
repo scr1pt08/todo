@@ -1,0 +1,112 @@
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    color: rgb(14, 166, 212);
+}
+
+.form {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius:10px;
+    padding-left: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.form__input:focus-visible {
+    outline: none;
+}
+
+.form__button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.form__button[disabled] {
+    background-color: #007bff8c;
+    color: rgb(255, 255, 255);
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.list__item {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px
+}
+
+.list__item_success {
+    background-color:  rgb(144, 233, 144);
+}
+
+.list__item:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+
+.button-group {
+    margin-top: 5px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button-group__done {
+    background-color: rgb(35, 155, 35);
+    margin-right: 10px;
+    box-shadow: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-group__done:hover {
+    background-color: rgb(22, 133, 22);
+    box-shadow: 0 0 10px rgba(25, 211, 41, 0.5);
+}
+
+
+.button-group__delete {
+    background-color: rgb(219, 29, 29);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-group__delete:hover {
+    background-color: rgb(190, 18, 18);
+    box-shadow: 0 0 10px rgb(180, 35, 25);
+}
+
+.form__filter {
+    width: 30%;
+    margin-left: auto;
+}

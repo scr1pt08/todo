@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script defer src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+        let defArray = [
+            {   
+                id: 1,
+                name:'Купить хлеб',
+                done: true
+            },
+            {   
+                id: 2,
+                name:'Написать песню',
+                done: true
+            },
+            {   
+                id: 3,
+                name:'Сходить на прогулку',
+                done: true
+            }
+        ]
+        createTodoApp(document.getElementById('todo-app'), 'Мои дела', 'todo', defArray);
+    })
+    </script>
+</head>
+<body>
+    <div id="todo-app" class="container"></div>
+</body>
+</html>
